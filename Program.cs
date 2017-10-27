@@ -6,7 +6,7 @@ namespace CadastroVendasPoo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
