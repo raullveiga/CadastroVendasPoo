@@ -20,9 +20,9 @@ namespace CadastroVendasPoo.classes
 
             try
             {
+                    ar = new StreamWriter("cadClientes.csv", true);
                 if (validaCPF(cliente.Cpf))
                 {
-                    ar = new StreamWriter("cadClientes.csv", true);
                     ar.WriteLine(cliente.Nome + ";" +
                                     cliente.Email + ";" +
                                     cliente.Cpf + ";" +
