@@ -55,10 +55,10 @@ namespace CadastroVendasPoo
                     break;
 
                     case 3:
-                        Console.Write("Digite o id da venda: ");
-                        int idvenda = Convert.ToInt16(Console.ReadLine());
                         Console.Write("Digite o CPF do cliente: ");
                         cpf = Console.ReadLine();
+                        Console.Write("Digite o id da produto: ");
+                        idProduto = Convert.ToInt16(Console.ReadLine());
                         
                     break;
                     
