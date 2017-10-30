@@ -3,30 +3,11 @@ namespace CadastroVendasPoo.classes{
     /// A Classe Produto possui informações do produto
     /// </summary>
     public class Produto{
-        private int id;
-        public int Id
-        {
-            get { return id;}
-            set { id = value;}
-        }
-        private string nProduto;
-        public string NProduto
-        {
-            get { return nProduto;}
-            set { nProduto = value;}
-        }
-        private string desc;
-        public string Desc
-        {
-            get { return desc;}
-            set { desc = value;}
-        }
-        private double preco;
-        public double Preco
-        {
-            get { return preco;}
-            set { preco = value;}
-        }
+        private int id;             public int Id{ get { return id;} set { id = value;}}
+        private string nProduto;    public string NProduto{ get { return nProduto;} set { nProduto = value;}}
+        private string desc;        public string Desc{ get { return desc;} set { desc = value;}}
+        private double preco;       public double Preco{ get { return preco;} set { preco = value;}}
+
         /// <summary>
         /// Constrói o objeto Produto
         /// </summary>
@@ -43,12 +24,6 @@ namespace CadastroVendasPoo.classes{
             this.nProduto = nProduto;
             this.desc = desc;
             this.preco = preco;
-        }
-
-
-        
-        
-        
-        
+        }  
     }
 }

@@ -5,24 +5,10 @@ namespace CadastroVendasPoo.classes{
     /// A classe Vendas possui informações sobre a venda
     /// </summary>
     public class Venda{
-        private string cpf;
-        public string Cpf
-        {
-            get { return Cpf;}
-            set { Cpf = value;}
-        }
-        private int id;
-        public int Id
-        {
-            get { return id;}
-            set { id = value;}
-        }
-        private DateTime dataVenda;
-        public DateTime DataVenda
-        {
-            get { return dataVenda;}
-            set { dataVenda = value;}
-        }
+        private string cpf;             public string Cpf {get { return cpf;} set { cpf = value;}}
+        private int id;                 public int Id{ get { return id;} set { id = value;}}
+        private DateTime dataVenda;     public DateTime DataVenda{ get { return dataVenda;} set { dataVenda = value;}}
+
         /// <summary>
         /// Constrói o objeto Venda
         /// </summary>
@@ -37,10 +23,6 @@ namespace CadastroVendasPoo.classes{
             this.id = id;
             this.cpf = cpf;
             this.dataVenda = dataVenda;
-        }
-
-
-        
-        
+        }   
     }
 }

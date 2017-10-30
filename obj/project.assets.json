@@ -664,23 +664,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\45610136873\\.nuget\\packages\\": {},
+    "C:\\Users\\raull\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\~~\\Raul\\CadastroVendasPoo\\CadastroVendasPoo.csproj",
+      "projectUniqueName": "C:\\Users\\raull\\Desktop\\senai\\cadastropoo\\CadastroVendasPoo\\CadastroVendasPoo.csproj",
       "projectName": "CadastroVendasPoo",
-      "projectPath": "C:\\~~\\Raul\\CadastroVendasPoo\\CadastroVendasPoo.csproj",
-      "packagesPath": "C:\\Users\\45610136873\\.nuget\\packages\\",
-      "outputPath": "C:\\~~\\Raul\\CadastroVendasPoo\\obj\\",
+      "projectPath": "C:\\Users\\raull\\Desktop\\senai\\cadastropoo\\CadastroVendasPoo\\CadastroVendasPoo.csproj",
+      "packagesPath": "C:\\Users\\raull\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\raull\\Desktop\\senai\\cadastropoo\\CadastroVendasPoo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\45610136873\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\raull\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"

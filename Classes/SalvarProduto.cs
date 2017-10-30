@@ -20,7 +20,7 @@ namespace CadastroVendasPoo.classes
             StreamWriter ar = null;
             try
             {
-                ar = new StreamWriter("cadProduto.csv", true);
+                ar = new StreamWriter("cadProdutos.csv", true);
                 ar.WriteLine(produto.Id + ";" +
                                 produto.NProduto + ";" +
                                 produto.Desc + ";" +

@@ -8,3 +8,13 @@ C:\~~\Raul\CadastroVendasPoo\obj\Debug\netcoreapp2.0\CadastroVendasPoo.AssemblyI
 C:\~~\Raul\CadastroVendasPoo\obj\Debug\netcoreapp2.0\CadastroVendasPoo.AssemblyInfo.cs
 C:\~~\Raul\CadastroVendasPoo\obj\Debug\netcoreapp2.0\CadastroVendasPoo.dll
 C:\~~\Raul\CadastroVendasPoo\obj\Debug\netcoreapp2.0\CadastroVendasPoo.pdb
+C:\Users\raull\Desktop\senai\cadastropoo\CadastroVendasPoo\bin\Debug\netcoreapp2.0\CadastroVendasPoo.deps.json
+C:\Users\raull\Desktop\senai\cadastropoo\CadastroVendasPoo\bin\Debug\netcoreapp2.0\CadastroVendasPoo.runtimeconfig.json
+C:\Users\raull\Desktop\senai\cadastropoo\CadastroVendasPoo\bin\Debug\netcoreapp2.0\CadastroVendasPoo.runtimeconfig.dev.json
+C:\Users\raull\Desktop\senai\cadastropoo\CadastroVendasPoo\bin\Debug\netcoreapp2.0\CadastroVendasPoo.dll
+C:\Users\raull\Desktop\senai\cadastropoo\CadastroVendasPoo\bin\Debug\netcoreapp2.0\CadastroVendasPoo.pdb
+C:\Users\raull\Desktop\senai\cadastropoo\CadastroVendasPoo\obj\Debug\netcoreapp2.0\CadastroVendasPoo.csproj.CoreCompileInputs.cache
+C:\Users\raull\Desktop\senai\cadastropoo\CadastroVendasPoo\obj\Debug\netcoreapp2.0\CadastroVendasPoo.AssemblyInfoInputs.cache
+C:\Users\raull\Desktop\senai\cadastropoo\CadastroVendasPoo\obj\Debug\netcoreapp2.0\CadastroVendasPoo.AssemblyInfo.cs
+C:\Users\raull\Desktop\senai\cadastropoo\CadastroVendasPoo\obj\Debug\netcoreapp2.0\CadastroVendasPoo.dll
+C:\Users\raull\Desktop\senai\cadastropoo\CadastroVendasPoo\obj\Debug\netcoreapp2.0\CadastroVendasPoo.pdb

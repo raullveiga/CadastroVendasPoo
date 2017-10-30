@@ -10,7 +10,7 @@ namespace CadastroVendasPoo
 
 
             int op = 0;
-            while (op!=9)
+            do
             {   
                 
               Console.WriteLine("\n\n##############################################################");
@@ -20,7 +20,8 @@ namespace CadastroVendasPoo
                 Console.WriteLine("#                                                            #");
                 Console.WriteLine("#                                                            #");
                 Console.WriteLine("##############################################################");
-            
+                
+
                 Console.WriteLine("\nDigite:\n 1- Cadastro de Cliente\n 2- Cadastro de Produto\n 3- Cadastro de Venda\n 4- Extrato do cliente\n 9- Sair");
                 op = Convert.ToInt16(Console.ReadLine());
                 Console.Clear();
@@ -57,19 +58,24 @@ namespace CadastroVendasPoo
                     case 3:
                         Console.Write("Digite o CPF do cliente: ");
                         cpf = Console.ReadLine();
-                        Console.Write("Digite o id da produto: ");
+                        Console.Write("Digite o id do produto: ");
                         idProduto = Convert.ToInt16(Console.ReadLine());
+
+                        Venda vd = new Venda(idProduto,cpf,DateTime.Now.Date);
+                        Console.WriteLine(new SalvarVenda().Salvar(vd));
                         
                     break;
                     
+                    case 9:
+                    break;
+
                     default:
+                    Console.WriteLine("Opção inválida");
                     break;
                 }
                 
-            }
-
-
-
+                Console.ReadKey();
+            }while (op!=9);
         }
     }
 }

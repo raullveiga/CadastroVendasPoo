@@ -23,7 +23,7 @@ namespace CadastroVendasPoo.classes
                     ar = new StreamWriter("cadClientes.csv", true);
                 if (validaCPF(cliente.Cpf))
                 {
-                    ar.WriteLine(cliente.Nome + ";" +
+                    ar.WriteLine(   cliente.Nome + ";" +
                                     cliente.Email + ";" +
                                     cliente.Cpf + ";" +
                                     cliente.DataCadastro);
@@ -46,7 +46,9 @@ namespace CadastroVendasPoo.classes
             return msg;
 
         }
-
+        /// <summary>
+        /// O método validaCPF verifica se o CPF passado é valido ou não.
+        ///<summary>
         bool validaCPF(string cpfUsuario)
         {
             bool retorno = true;
@@ -92,6 +94,5 @@ namespace CadastroVendasPoo.classes
             return retorno;
 
         }
-
     }
 }

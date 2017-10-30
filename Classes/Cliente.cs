@@ -5,10 +5,10 @@ namespace CadastroVendasPoo.classes{
     /// A classe Cliente possui informações sobre o cliente
     /// </summary>
     public class Cliente{
-        private string nome;
-        private string email;
-        private string cpf;
-        private DateTime datacadastro;
+        private string nome;            public string Nome { get{return nome;} set{nome = value;}}
+        private string email;           public string Email { get{return email;} set{email = value;}}
+        private string cpf;             public string Cpf { get{return cpf;} set{cpf = value;}}
+        private DateTime datacadastro;  public DateTime DataCadastro { get{return datacadastro;} set{datacadastro = value;}}
         /// <summary>
         /// Constrói o objeto Cliente
         /// </summary>
@@ -25,13 +25,6 @@ namespace CadastroVendasPoo.classes{
             this.email = email;
             this.cpf= cpf;
             this.datacadastro = datacadastro;
-        }
-
-        public string Nome { get{return nome;} set{nome = value;}}
-        public string Email { get{return email;} set{email = value;}}
-        public string Cpf { get{return cpf;} set{cpf = value;}}
-        public DateTime DataCadastro { get{return datacadastro;} set{datacadastro = value;}}
-
-        
+        }  
     }
 }
