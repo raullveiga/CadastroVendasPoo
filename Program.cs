@@ -38,6 +38,8 @@ namespace CadastroVendasPoo
                         Cliente cl = new Cliente(nomeCliente,email,cpf,DateTime.Now.Date);
                         Console.Write(new SalvarCliente().Salvar(cl));
 
+                        Console.ReadKey();
+
                     break;
 
                     case 2:
@@ -53,6 +55,8 @@ namespace CadastroVendasPoo
                         Produto pr = new Produto(idProduto,nProduto,desc,preco);
                         Console.Write(new SalvarProduto().Salvar(pr));
 
+                        Console.ReadKey();
+
                     break;
 
                     case 3:
@@ -63,9 +67,19 @@ namespace CadastroVendasPoo
 
                         Venda vd = new Venda(idProduto,cpf,DateTime.Now.Date);
                         Console.WriteLine(new SalvarVenda().Salvar(vd));
-                        
+
+                        Console.ReadKey();
+
                     break;
-                    
+
+                    case 4:
+                        Console.WriteLine("Digite o CPF a ser consultado: ");
+                        Console.WriteLine(new Extrato().Dados(Console.ReadLine()));
+                        
+                        Console.ReadKey();
+
+                    break;
+
                     case 9:
                     break;
 
@@ -74,7 +88,7 @@ namespace CadastroVendasPoo
                     break;
                 }
                 
-                Console.ReadKey();
+                
             }while (op!=9);
         }
     }
