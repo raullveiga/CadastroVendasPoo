@@ -1,8 +1,8 @@
 using System;
 using System.IO;
 
-namespace CadastroVendasPoo.classes
-{  
+namespace CadastroVendasPoo.Classes
+{
     /// <summary>
     /// A classe SalvarProduto, grava os dados de um produto
     /// </summary>
@@ -18,15 +18,24 @@ namespace CadastroVendasPoo.classes
             string msg = "";
 
             StreamWriter ar = null;
+            bool e = new Prod().Exists(produto.Id);                        /// verificando se o Id já está cadastrado
+            
             try
             {
-                ar = new StreamWriter("cadProduto.csv", true);
-                ar.WriteLine(produto.Id + ";" +
-                                produto.NProduto + ";" +
-                                produto.Desc + ";" +
-                                produto.Preco);
+                ar = new StreamWriter("cadProdutos.csv", true);
+                if (!e)
+                {
+                    ar.WriteLine(   produto.Id + ";" +
+                                    produto.NProduto + ";" +
+                                    produto.Desc + ";" +
+                                    produto.Preco);
 
-                msg = "Produto cadastrado com sucesso!";
+                    msg = "Produto cadastrado com sucesso!";
+                }
+                else
+                {
+                    msg = "Id já está cadastrada!";
+                }
             }
             catch (Exception ex)
             {

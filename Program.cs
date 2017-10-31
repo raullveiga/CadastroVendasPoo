@@ -1,5 +1,5 @@
 ﻿using System;
-using CadastroVendasPoo.classes;
+using CadastroVendasPoo.Classes;
 
 namespace CadastroVendasPoo
 {
@@ -10,7 +10,7 @@ namespace CadastroVendasPoo
 
 
             int op = 0;
-            while (op!=9)
+            do
             {   
                 
               Console.WriteLine("\n\n##############################################################");
@@ -20,13 +20,16 @@ namespace CadastroVendasPoo
                 Console.WriteLine("#                                                            #");
                 Console.WriteLine("#                                                            #");
                 Console.WriteLine("##############################################################");
-            
+                
+                try{
                 Console.WriteLine("\nDigite:\n 1- Cadastro de Cliente\n 2- Cadastro de Produto\n 3- Cadastro de Venda\n 4- Extrato do cliente\n 9- Sair");
                 op = Convert.ToInt16(Console.ReadLine());
-                Console.Clear();
+                
+
                 switch (op)
                 {
                     case 1:
+                        
                         Console.Write("Digite o nome do cliente: ");
                         string nomeCliente = Console.ReadLine();
                         Console.Write("Digite o e-mail do cliente: ");
@@ -36,7 +39,10 @@ namespace CadastroVendasPoo
                         
                         Cliente cl = new Cliente(nomeCliente,email,cpf,DateTime.Now.Date);
                         Console.Write(new SalvarCliente().Salvar(cl));
-
+                        
+                       
+                        
+                        
                     break;
 
                     case 2:
@@ -52,24 +58,48 @@ namespace CadastroVendasPoo
                         Produto pr = new Produto(idProduto,nProduto,desc,preco);
                         Console.Write(new SalvarProduto().Salvar(pr));
 
+                        
+
                     break;
 
                     case 3:
                         Console.Write("Digite o CPF do cliente: ");
                         cpf = Console.ReadLine();
-                        Console.Write("Digite o id da produto: ");
+                        Console.Write("Digite o id do produto: ");
                         idProduto = Convert.ToInt16(Console.ReadLine());
+
+                        Venda vd = new Venda(idProduto,cpf,DateTime.Now.Date);
+                        Console.WriteLine(new SalvarVenda().Salvar(vd));
+
                         
+
                     break;
-                    
+
+                    case 4:
+                        Console.WriteLine("Digite o CPF a ser consultado: ");
+                        Console.WriteLine(new Extrato().Dados(Console.ReadLine()));
+                        
+                        
+
+                    break;
+
+                    case 9:
+                    break;
+
                     default:
+                    Console.WriteLine("Opção inválida");
                     break;
                 }
+                }
+                catch(Exception){
+                    System.Console.WriteLine("Entrada inválida");
+                }
+                finally{
+                    Console.ReadKey();
+                    Console.Clear();
+                }
                 
-            }
-
-
-
+            }while (op!=9);
         }
     }
 }

@@ -1,7 +1,8 @@
 using System;
 using System.IO;
+using System.Text;
 
-namespace CadastroVendasPoo.classes
+namespace CadastroVendasPoo.Classes
 {   
     /// <summary>
     /// A classe SalvarVenda grava os dados de uma venda
@@ -20,11 +21,16 @@ namespace CadastroVendasPoo.classes
             try
             {
                 ar = new StreamWriter("cadVendas.csv", true);
+
+                if(new Cpf().Exists(venda.Cpf)&&new Prod().Exists(venda.Id)){
                 ar.WriteLine(   venda.Id + ";" +
                                 venda.Cpf + ";" +
                                 venda.DataVenda);
-
                 msg = "Venda salva com sucesso!";
+                }
+                else
+                msg = "CPF ou Id inválidos.";
+
             }
             catch (Exception ex)
             {
